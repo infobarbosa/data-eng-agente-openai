@@ -1,0 +1,9 @@
+services:
+  agente-genai:
+    build: .
+    container_name: agente-genai
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
