@@ -6,8 +6,6 @@ from dotenv import load_dotenv
 # Carrega variáveis de ambiente do .env
 load_dotenv()
 
-#openai.api_key = os.getenv("OPENAI_API_KEY")
-
 st.set_page_config(page_title="Agente Simples de Perguntas e Respostas", layout="centered")
 
 def gerar_resposta(pergunta: str) -> str:
